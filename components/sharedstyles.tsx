@@ -9,6 +9,31 @@ const Container = styled.div`
   height: 100vh;
   min-height: 100vh;
 `;
+
+const ContainerBox = styled.div`
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  align-items: center;
+  grid-area: content;
+  justify-content: center;
+`;
+
+const NavBar = styled.nav`
+  background: #3a3a55;
+  grid-area: nav;
+  padding: 0.25rem;
+`;
+
+const Grid = styled.div`
+  // display: grid;
+  height: 100vh;
+`; 
+
+const LaneBox = styled.div`
+  border: 2px black;
+`;
+
 const Main = styled.main`
   padding: 5rem 0;
   flex: 1;
@@ -51,4 +76,21 @@ const CodeTag = styled.code`
     Bitstream Vera Sans Mono, Courier New, monospace;
 `;
 
-export { Container, Main, Title, Description, CodeTag };
+const CardBox = styled.div`
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 100%;
+
+  &:hover,
+  :focus,
+  :active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+`;
+
+export { Container, Main, Title, Description, CodeTag, Grid, ContainerBox, NavBar, LaneBox, CardBox };
